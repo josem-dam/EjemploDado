@@ -9,6 +9,8 @@ public class App {
         System.out.print("Indique las veces que desea lanzar el dado: ");
         lanzamientos = sc.nextInt();
 
+        sc.close();
+
         while(dado.getLanzamientos() < lanzamientos) {
             System.out.printf("Lanzo el dado y obtengo un %d.\n", dado.lanzar());
         }
